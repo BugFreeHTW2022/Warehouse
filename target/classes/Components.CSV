@@ -1,0 +1,16 @@
+ID;NAME;DESCRIPTION;NUTRISCORE;CLASS;VEGAN;PRICE
+1;Small;Small product size;X;SIZE;TRUE;10
+2;Medium;Medium product size;X;SIZE;TRUE;20
+3;Big;Big product size;X;SIZE;TRUE;30
+4;Normal;Classic dough with milk and eggs;B;TEIG;FALSE;5
+5;Schoko;Classic milk and egg dough with chocolate and cocoa;C;TEIG;FALSE;10
+6;Vegan;Special vegan dough recipe;A;TEIG;TRUE;10
+7;French Cream;Classic French Buttercream;C;FILL;FALSE;10
+8;Fruitty Pase;Vegan fruit jam;A;FILL;TRUE;15
+9;Gelatto;Special ice cream filling;C;FILL;FALSE;20
+10;White;Classic white sugar glaze;C;GLASUR;FALSE;5
+11;Rainbow;Glaze in the colors of the rainbow;C;GLASUR;TRUE;10
+12;Glance;Glossy glaze in the color of deep space;C;GLASUR;FALSE;15
+13;Photo;Putting an edible photo on the cake;A;EXTRAS;TRUE;5
+14;Figures;Figurines on top of the cake;A;EXTRAS;TRUE;10
+15;Fruits;Decorating the cake with slices of fresh fruit;A;EXTRAS;TRUE;5

@@ -1,0 +1,7 @@
+id;name;size;dough;fill;glasur;description;extras;userName
+1;Vegan Cake;Small;Vegan;Fruitty Paste;Rainbow;Small vegan cake with fruit paste filling and rainbow frosting, decorated with fruits;Fruits;DEFAULT
+2;Choko Wedding Cake;Big;Schoko;Gelatto;White;Large chocolate wedding cake with ice cream filling, covered with white icing with figurines of newlyweds on top;Figures;DEFAULT
+3;Classic Birtday Cake;Medium;Normal;French Cream;White;Classic medium-sized birthday cake, French cream filling, covered with white icing, with the photo of the birthday person;Photo;DEFAULT
+4;Gelatto Cake;Medium;Normal;Gelatto;Glance;Medium Ice Cream Cake covered with shiny frosting and garnished with fruit;Fruits;DEFAULT
+5;Small party cake;Small;Schoko;Fruitty Paste;Glance;Small chocolate cake with fruit filling, covered with glossy frosting and decorated with fruit ;Fruits;DEFAULT
+6;Cake for a children's party;Medium;Normal;Fruitty Paste;Rainbow;Medium-sized cake with fruit filling and rainbow frosting, with figures of the birthday child's favorite characters on top;Figures;DEFAULT
