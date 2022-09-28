@@ -21,8 +21,6 @@ import java.util.List;
 @Configuration
 public class MongoDBConfig {
 
-
-
     @EventListener(ApplicationReadyEvent.class)
     void test() {
         initializeProductsDB();
@@ -30,10 +28,10 @@ public class MongoDBConfig {
     }
 
     public static void initializeProductsDB(){
-            MongoClient mongoClient = new MongoClient();
+            MongoClient mongoClient = new MongoClient("mongoDB", 27017);
             DB database = mongoClient.getDB("WarehouseDB");
             DBCollection collection = database.getCollection("Products");
-            List<String> list = read("src/main/resources/Products.CSV");
+            List<String> list = read("/app/Products.CSV");
             list.remove(0);
             for (String product:list) {
                 String [] arr = product.split(";");
@@ -59,10 +57,10 @@ public class MongoDBConfig {
         }
 
     public static void initializeComponentsDB(){
-        MongoClient mongoClient = new MongoClient();
+        MongoClient mongoClient = new MongoClient("mongoDB", 27017);
         DB database = mongoClient.getDB("WarehouseDB");
         DBCollection collection = database.getCollection("Components");
-        List<String> list = read("src/main/resources/Components.CSV");
+        List<String> list = read("/app/Components.CSV");
         list.remove(0);
         for (String product:list) {
             String [] arr = product.split(";");
@@ -84,9 +82,6 @@ public class MongoDBConfig {
         }
     }
 
-
-
-
     public static List<String> read(String csvFile) {
         List<String> list = new ArrayList<>();
         try {
@@ -94,7 +89,6 @@ public class MongoDBConfig {
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String line = " ";
-            String[] tempArr;
             while ((line = br.readLine()) != null) {
                 list.add(line);
                 System.out.println(line);

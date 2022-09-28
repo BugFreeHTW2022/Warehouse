@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  warehouse:
+    container_name: WarehouseApp
+    command: java -jar target/demo-0.0.1-SNAPSHOT.jar
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - spring_data_mongodb_host=mongoDB
+      - spring_data_mongodb_port=27017
+      - spring_data_mongodb_database=warehouseDB
+    depends_on:
+      - mongoDB
+    networks:
+      - warehouseNetwork
+  mongoDB:
+    container_name: WarehouseDB
+    image: 'mongo:4.4.3'
+    restart: always
+    ports:
+      - "27017:27017"
+    networks:
+      - warehouseNetwork
+networks:
+  warehouseNetwork:
